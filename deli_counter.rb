@@ -23,7 +23,7 @@ end
 
 def now_serving(katz_deli)
   counter = 0
-  name = other_deli
+  name = other_deli.first
   if katz_deli.empty?
     puts "There is nobody waiting to be served!"
   elsif counter < katz_deli.length 
