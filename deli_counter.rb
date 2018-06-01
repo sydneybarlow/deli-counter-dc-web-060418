@@ -23,10 +23,11 @@ end
 
 def now_serving(katz_deli)
   counter = 0
+  name = other_deli
   if katz_deli.empty?
     puts "There is nobody waiting to be served!"
   elsif counter < katz_deli.length 
-    puts "Now serving."
+    puts "Currently serving #{name}."
     katz_deli.shift()
   end
 end   
