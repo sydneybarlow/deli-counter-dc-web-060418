@@ -21,10 +21,12 @@ def take_a_number(katz_deli, name)
   puts "Welcome, #{name}. You are number #{katz_deli.size} in line."
 end  
 
-def now_serving(katz_deli)
+def now_serving(katz_deli, name)
+  counter = 0
   if katz_deli.empty?
-    puts "The line is currently empty."
-  else 
-    
-  end  
+    puts "There is nobody waiting to be served!"
+  elsif counter < katz_deli.length 
+    puts "Now serving #{name}."
+    katz_deli.unshift
+  end
 end   
