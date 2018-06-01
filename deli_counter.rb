@@ -17,11 +17,7 @@ def line(katz_deli)
 end
 
 def take_a_number(katz_deli, name)
- # counter = 0 
-  #while counter < katz_deli.size
       katz_deli.push(name)
-  #    counter += 1 
-  #end
   puts "Welcome, #{name}. You are number #{katz_deli.size} in line."
 end  
 
